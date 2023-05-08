@@ -1,0 +1,5 @@
+#installs the Web Server (IIS) role on a Windows server
+<powershell>
+Install-WindowsFeature -name Web-Server -IncludeManagementTools 
+New-Item -Path C:\inetpub\wwwroot\index.html -ItemType File -Value "Hello World Page" -Force
+</powershell>
